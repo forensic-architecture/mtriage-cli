@@ -4,5 +4,3 @@ go:
 before_install:
 - go get github.com/jroimartin/gocui
 - go get gopkg.in/yaml.v2
-after_success:
-- go build -o bin/mgen

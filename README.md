@@ -1,5 +1,7 @@
 # mtriage-cli
 
+[![Build Status](https://travis-ci.com/forensic-architecture/mtriage-cli.svg?branch=master)](https://travis-ci.com/forensic-architecture/mtriage-cli)
+
 ### NB: currently unstable, in active development, and should not be used in production
 
 #### generate .yaml files for specifying mtriage workflows
@@ -9,8 +11,6 @@ mtriage-cli is a command-line application for generating .yaml configuration fil
 ## development
 mtriage-cli is currently in active development. It is written in Go, and is based on the Gocui package.
 
-mtriage-cli comes packaged as binary, or can be built locally (requiring the depencies listed below). The binary must first be added to the system PATH, and then launced by running `mgen` in the base directory of mtriage.
-
 ### dependencies
 - [Go](https://golang.org/doc/install)
 - [gocui](https://github.com/jroimartin/gocui) - install with `go get github.com/jroimartin/gocui`
@@ -18,6 +18,8 @@ mtriage-cli comes packaged as binary, or can be built locally (requiring the dep
 
 
 ### building locally
-You can build the mtriage-cli executable locally by running:
+You can build the mtriage-cli executable locally by running from the `src` folder:
 ```bash
 go build -o bin/mgen
+
+The binary must first be added to the system PATH, and then launched by running `mgen` in the base directory of mtriage.
