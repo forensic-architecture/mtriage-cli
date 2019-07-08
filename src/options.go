@@ -127,7 +127,9 @@ func (so saveOption) Present(g *gocui.Gui, v *gocui.View) error {
   fmt.Fprintln(v, "SAVE CONFIG")
   fmt.Fprintln(v, "-----------")
   fmt.Fprintln(v, "")
-  fmt.Fprintln(v, "Please choose a file name for this workflow\nconfiguration.\n\nIt will be saved as a yaml file in your workflows\ndirectory.\n\n")
+  fmt.Fprintln(v, "Please choose a file name for this workflow\nconfiguration.\n\nIt will be saved as a yaml file in your workflows\ndirectory.")
+  fmt.Fprintln(v, "")
+  fmt.Fprintln(v, "")
   if so.isComposable {
     fmt.Fprintln(v, "Or to add another analyser, press SPACE.")
   }
