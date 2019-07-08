@@ -21,5 +21,6 @@ mtriage-cli is currently in active development. It is written in Go, and is base
 You can build the mtriage-cli executable locally by running from the `src` folder:
 ```bash
 go build -o bin/mgen
+```
 
 The binary must first be added to the system PATH, and then launched by running `mgen` in the base directory of mtriage.
