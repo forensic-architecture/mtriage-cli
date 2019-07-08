@@ -63,7 +63,7 @@ func dirIsValid(path string) bool {
   if dirExists(path) {
     return true
   }
-  err := os.Mkdir(path, 0755)
+  err := os.MkdirAll(path, os.ModePerm)
   if err == nil {
     os.Remove(path)
     return true

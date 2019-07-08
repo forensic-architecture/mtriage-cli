@@ -16,7 +16,6 @@ mtriage-cli is currently in active development. It is written in Go, and is base
 - [gocui](https://github.com/jroimartin/gocui) - install with `go get github.com/jroimartin/gocui`
 - [go-yaml](https://github.com/go-yaml/yaml) - install with `go get gopkg.in/yaml.v2`
 
-
 ### building locally
 You can build the mtriage-cli executable locally by running from the `src` folder:
 ```bash
